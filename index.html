@@ -5,59 +5,88 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>workshop # html-form
-
-    </h1>
-    <table>
-        <tr>
-            <td>ชื่อ</td>
-            <td><input type="text" id="fname" name="fname"></td>
-        </tr>
-        <tr>
-            <td>สกุล</td>
-            <td><input type="text" id="fname" name="fname"></td>
-        </tr>
-        <tr>
-            <td>วัน/เดือน/ปีเกิด</td>
-            <td><input type="date"></td>
-        </tr>
-        <tr>
-            <td>อายุ</td>
-            <td><input type="text" id="fname" name="fname"></td>
-        </tr>
-        <tr>
-            <td>เพศ</td>
-            <td><input type="radio" id="html" name="fav_language" value="HTML">ชาย<input type="radio" id="html" name="fav_language" value="HTML">หญิง </td>
-        </tr>
-        <tr>
-            <td>รูป</td>
-            <td><input type="file"> </td>
-        </tr>
-        <tr>
-            <td>ที่อยู่</td>
-            <td><textarea rows="6" cols="30"></textarea> </td>
-        </tr>
-        <tr>
-            <td>สีที่ชอบ</td>
-            <td><select id="cars" name="cars" >
-                <option value="แดง">แดง</option>
-                <option value="ฟ้า">ฟ้า</option>
-                <option value="เขียว">เขียว</option>
-                <option value="ดำ">ดำ</option></td>
-        </tr>
-        <tr>
-            <td>แนวเพลงที่ชอบ</td>
-            <td><input type="radio" id="html" name="fav_language" value="HTML">เพื่อชีวิต<input type="radio" id="html" name="fav_language" value="HTML">ลูกทุ่ง 
-                <input type="radio" id="html" name="fav_language" value="HTML">อื่นๆ</td>
-        </tr>
-        <tr>
-            <td><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">ยื่นยันให้เก็บข้อมูล</td>
-        </tr>
-        <tr>
-            <td><input type="reset"></td> <td> <input type="submit"></td>
-
-        </tr>
-    </table>
-   
+    <h1>Workshop: HTML Form</h1>
+    <form>
+        <table>
+            <tr>
+                <td>ชื่อ</td>
+                <td><input type="text" id="fname" name="fname"></td>
+            </tr>
+            <tr>
+                <td>สกุล</td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+            <tr>
+                <td>วัน/เดือน/ปีเกิด</td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td>อายุ</td>
+                <td><input type="number" id="age" name="age" min="0"></td>
+            </tr>
+            <tr>
+                <td>เพศ</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="ชาย">
+                    <label for="male">ชาย</label>
+                    <input type="radio" id="female" name="gender" value="หญิง">
+                    <label for="female">หญิง</label>
+                </td>
+            </tr>
+            <tr>
+                <td>รูป</td>
+                <td><input type="file" id="photo" name="photo"></td>
+            </tr>
+            <tr>
+                <td>ที่อยู่</td>
+                <td><textarea id="address" name="address" rows="6" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td>สีที่ชอบ</td>
+                <td>
+                    <select id="favorite_color" name="favorite_color">
+                        <option value="แดง">แดง</option>
+                        <option value="ฟ้า">ฟ้า</option>
+                        <option value="เขียว">เขียว</option>
+                        <option value="ดำ">ดำ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>แนวเพลงที่ชอบ</td>
+                <td>
+                    <input type="radio" id="life_song" name="music_genre" value="เพื่อชีวิต">
+                    <label for="life_song">เพื่อชีวิต</label>
+                    <input type="radio" id="country_song" name="music_genre" value="ลูกทุ่ง">
+                    <label for="country_song">ลูกทุ่ง</label>
+                    <input type="radio" id="other_song" name="music_genre" value="อื่นๆ">
+                    <label for="other_song">อื่นๆ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>กีฬาที่ชอบ</td>
+                <td>
+                    <input type="radio" id="football" name="sport" value="เตะบอล">
+                    <label for="football">เตะบอล</label>
+                    <input type="radio" id="swimming" name="sport" value="ว่ายน้ำ">
+                    <label for="swimming">ว่ายน้ำ</label>
+                    <input type="radio" id="badminton" name="sport" value="ตีแบด">
+                    <label for="badminton">ตีแบด</label>
+                    <input type="radio" id="other_sport" name="sport" value="อื่นๆ">
+                    <label for="other_sport">อื่นๆ</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" id="consent" name="consent" value="ยืนยัน">
+                    <label for="consent">ยืนยันให้เก็บข้อมูล</label>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="ล้างข้อมูล"></td>
+                <td><input type="submit" value="ส่งข้อมูล"></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
